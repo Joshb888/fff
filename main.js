@@ -38,6 +38,18 @@ for(i=0; i<employees.length; i++){
 //dynamically created buttons added to buttonsMenu div
 buttonsMenu.innerHTML = buttons;
 
+//add event lister to document as buttons will change as the employee objects change
+document.body.addEventListener('click', function(e){
+    for(i=0; i<employees.length; i++){
+        //create a button id used in dynamic buttons
+        let btnId = 'obj' + i;
+        //check if the id of source element matches the button id - display slide
+        if(e.srcElement.id == btnId){
+            nextSlide(i);
+        }
+    }
+});
+
 //on page load, fill the current div (3) with details of the first employee.
 slideOnLoad();
 
