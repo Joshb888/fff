@@ -25,3 +25,15 @@ div1.style.left = "0px";
 
 //current slide variable set to 3 - the div sitting on top of the other divs.
 let currentSlide = 3;
+
+//buttons variable to store dynamically created buttons from employees objects.
+let buttons = '';
+
+for(i=0; i<employees.length; i++){
+    let btn = '';
+    btn += '<button id="' + 'obj' + i + '">' + employees[i].firstName + ' ' + employees[i].lastName + '</button>';
+    buttons += btn;
+}
+
+//dynamically created buttons added to buttonsMenu div
+buttonsMenu.innerHTML = buttons;
