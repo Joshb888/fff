@@ -66,8 +66,7 @@ function nextSlide(objNum){
     content += '<h1>' + employees[i].firstName + ' ' + employees[i].lastName + '</h1>';
     content += '<h3>Job: ' + employees[i].job + '</h3>';
 
-    
-
+    //fade out current slide, slide in waiting slide, move exited slide to the right
     if(currentSlide == 3){
         div3.style.opacity = "0";
         div3.style.left = "0px";
@@ -97,6 +96,4 @@ function nextSlide(objNum){
         currentSlide = 3;
     }
 
-    console.log(currentSlide);
-    
 }
