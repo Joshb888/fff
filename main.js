@@ -10,3 +10,7 @@ let employees = [
 //div we will add a button to dynamically from the employess objects.
 let buttonsMenu = document.getElementById("buttonsMenu");
 
+//divs to add content to AND slide in and out on button click.
+let div1 = document.getElementById("div1");
+let div2 = document.getElementById("div2");
+let div3 = document.getElementById("div3");
