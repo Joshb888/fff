@@ -37,3 +37,13 @@ for(i=0; i<employees.length; i++){
 
 //dynamically created buttons added to buttonsMenu div
 buttonsMenu.innerHTML = buttons;
+
+//on page load, fill the current div (3) with details of the first employee.
+slideOnLoad();
+
+function slideOnLoad(){
+    let content = '';
+    content += '<h1>' + employees[0].firstName + ' ' + employees[0].lastName + '</h1>';
+    content += '<h3>Job: ' + employees[0].job + '</h3>';
+    div3.innerHTML = content;
+}
