@@ -47,3 +47,44 @@ function slideOnLoad(){
     content += '<h3>Job: ' + employees[0].job + '</h3>';
     div3.innerHTML = content;
 }
+
+//function called when an employee name button is clicked. 
+function nextSlide(objNum){
+    let content = '';
+    content += '<h1>' + employees[i].firstName + ' ' + employees[i].lastName + '</h1>';
+    content += '<h3>Job: ' + employees[i].job + '</h3>';
+
+    
+
+    if(currentSlide == 3){
+        div3.style.opacity = "0";
+        div3.style.left = "0px";
+        div2.style.opacity = "1";
+        div2.style.left = "0px";
+        div2.innerHTML = content;
+        div1.style.opacity = "0";
+        div1.style.left = "1200px";
+        currentSlide = 2;
+    }else if(currentSlide == 2){
+        div3.style.opacity = "0";
+        div3.style.left = "1200px";
+        div2.style.opacity = "0";
+        div2.style.left = "0px";
+        div1.style.opacity = "1";
+        div1.style.left = "0px";
+        div1.innerHTML = content;
+        currentSlide = 1;
+    }else if(currentSlide == 1){
+        div3.style.opacity = "1";
+        div3.style.left = "0px";
+        div3.innerHTML = content;
+        div2.style.opacity = "0";
+        div2.style.left = "1200px";
+        div1.style.opacity = "0";
+        div1.style.left = "0px";
+        currentSlide = 3;
+    }
+
+    console.log(currentSlide);
+    
+}
