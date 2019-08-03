@@ -22,3 +22,6 @@ div2.style.opacity = "0";
 div2.style.left = "1200px";
 div1.style.opacity = "0";
 div1.style.left = "0px";
+
+//current slide variable set to 3 - the div sitting on top of the other divs.
+let currentSlide = 3;
