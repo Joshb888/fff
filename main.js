@@ -14,3 +14,11 @@ let buttonsMenu = document.getElementById("buttonsMenu");
 let div1 = document.getElementById("div1");
 let div2 = document.getElementById("div2");
 let div3 = document.getElementById("div3");
+
+//starting positions of divs set
+div3.style.opacity = "1";
+div3.style.left = "0";
+div2.style.opacity = "0";
+div2.style.left = "1200px";
+div1.style.opacity = "0";
+div1.style.left = "0px";
