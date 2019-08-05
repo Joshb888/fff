@@ -25,7 +25,6 @@ body{
 	height:200px;
 	position:absolute;
 	top:0;
-	border: 2px solid green;
 	transition: opacity 500ms ease-out, left 900ms ease-in-out;
 	-webkit-transition: opacity 500ms ease-out, left 900ms ease-in-out;
 	-moz-transition: opacity 500ms ease-out, left 900ms ease-in-out;
