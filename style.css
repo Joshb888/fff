@@ -14,3 +14,8 @@ body{
 	height:200px;
 	background-color: lightgrey;
 }
+
+.display-div{
+	position:relative;
+	overflow: hidden;
+}
