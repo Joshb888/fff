@@ -30,3 +30,12 @@ body{
 	-moz-transition: opacity 500ms ease-out, left 900ms ease-in-out;
 	-o-transition: opacity 500ms ease-out, left 900ms ease-in-out;
 }
+
+
+/*
+MOBILE FIRST DEVELOPMENT
+*/
+
+@media screen and (min-width: 760px){
+
+}
