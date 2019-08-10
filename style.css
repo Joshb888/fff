@@ -28,7 +28,9 @@ body{
 	overflow: hidden;
 	height: 250px;
 	border: 1px solid lightgrey;
+	margin:12px;
 }
+
 
 .sliderDiv{
 	width:100%;
@@ -66,5 +68,12 @@ MOBILE FIRST DEVELOPMENT
 		min-width:40%;
 		cursor: pointer;
 		border:0;
+	}
+
+	.display-div{
+		position:relative;
+		overflow: hidden;
+		height: 250px;
+		border: 1px solid lightgrey;
 	}
 }
