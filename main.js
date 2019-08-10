@@ -36,7 +36,7 @@ let buttons = '';
 
 for(i=0; i<employees.length; i++){
     let btn = '';
-    btn += '<button id="' + 'obj' + i + '">' + employees[i].firstName + ' ' + employees[i].lastName + '</button>';
+    btn += '<button class="btn" id="' + 'obj' + i + '">' + employees[i].firstName + ' ' + employees[i].lastName + '</button>';
     buttons += btn;
 }
 
