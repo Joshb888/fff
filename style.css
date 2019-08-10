@@ -33,9 +33,11 @@ body{
 
 
 .sliderDiv{
-	width:100%;
+	width:89%;
 	position:absolute;
 	top:0;
+	padding-left:15px;
+	padding-right:15px;
 	transition: opacity 200ms, left 800ms ease-in-out;
 	-webkit-transition: opacity 200ms, left 800ms ease-in-out;
 	-moz-transition: opacity 200ms, left 800ms ease-in-out;
