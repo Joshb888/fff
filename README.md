@@ -5,14 +5,14 @@ This is a mini part of a project where I had to create an interacive team member
 This is the interactive JS part of the project.
 
 ## The end result
-The final result is a page that uses JS objects of team members (converted from a database) and dynamically creates a button for each team member.  On clicking each button, basic employee info slides onto the screen for each team member.
+The final result is a page that uses JS objects of team members (demo objects used in this repository) and dynamically creates a button for each team member.  On clicking each button, basic employee info slides onto the screen for each team member.
 
 ## Languages
 Purely Javascript is used for this part of the project.
 The JS objects used here are example objects.
 
 NOTE: For students of code:
-This would be the front end of a bigger project written using a back end language that would save the team members as objects in a database such as PHP (Wordpress, Laravel), Python (Django) or C# (.NET) or any other back end language and platform combination.
+This would be the front end of a bigger project written using a back end language and/or framework that would save the team members as objects in a database such as PHP (Wordpress, Laravel), Python (Django) or C# (.NET) or any other back end language and platform combination.
 (See my other repositories for converting PHP objects to JS objects in Wordpress)
 
 ### SKILLS COVERED
