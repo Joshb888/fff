@@ -1,10 +1,15 @@
 //Array of employee demo objects
 let employees = [
-    {firstName:'Brian', lastName:'Wilson', job:'Developer'},
-    {firstName:'Terry', lastName:'Jackson', job:'Manager'},
-    {firstName:'Sally', lastName:'Phelan', job:'Director'},
-    {firstName:'Claire', lastName:'Wilson', job:'Designer'},
-    {firstName:'Debbie', lastName:'Jones', job:'Designer'}
+    {firstName:'Brian', lastName:'Wilson', job:'Developer',
+    bio:'Brian has worked as a developer for 20 years. He works with a variety of languages including Python, PHP and C#'},
+    {firstName:'Terry', lastName:'Jackson', job:'Manager',
+    bio: 'Terry joined in 2004 and has worked as Operations and Logistics manager.'},
+    {firstName:'Sally', lastName:'Phelan', job:'Director',
+    bio:'Sally has been the director of the company for 12 years overseeing the growth of the company.'},
+    {firstName:'Claire', lastName:'Wilson', job:'Designer',
+    bio:'Claire has a passion for design and works alongside the developers delivering pixel perfect design.'},
+    {firstName:'Debbie', lastName:'Jones', job:'Designer',
+    bio:'Debbie is a UX specialist working alongside our team of developers.'}
 ];
 
 //div we will add a button to dynamically from the employess objects.
@@ -57,6 +62,7 @@ function slideOnLoad(){
     let content = '';
     content += '<h1>' + employees[0].firstName + ' ' + employees[0].lastName + '</h1>';
     content += '<h3>Job: ' + employees[0].job + '</h3>';
+    content += '<p>' + employees[0].bio + '</p>';
     div3.innerHTML = content;
 }
 
@@ -65,6 +71,7 @@ function nextSlide(objNum){
     let content = '';
     content += '<h1>' + employees[i].firstName + ' ' + employees[i].lastName + '</h1>';
     content += '<h3>Job: ' + employees[i].job + '</h3>';
+    content += '<p>' + employees[i].bio + '</p>';
 
     //fade out current slide, slide in waiting slide, move exited slide to the right
     if(currentSlide == 3){
