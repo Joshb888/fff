@@ -5,7 +5,7 @@ body{
 
 .container{
 	display:grid;
-	grid-template-columns: 97%;
+	grid-template-columns: 100%;
 	grid-template-rows:auto;
 }
 
@@ -34,10 +34,10 @@ body{
 	width:100%;
 	position:absolute;
 	top:0;
-	transition: opacity 500ms ease-out, left 900ms ease-in-out;
-	-webkit-transition: opacity 500ms ease-out, left 900ms ease-in-out;
-	-moz-transition: opacity 500ms ease-out, left 900ms ease-in-out;
-	-o-transition: opacity 500ms ease-out, left 900ms ease-in-out;
+	transition: opacity 200ms, left 800ms ease-in-out;
+	-webkit-transition: opacity 200ms, left 800ms ease-in-out;
+	-moz-transition: opacity 200ms, left 800ms ease-in-out;
+	-o-transition: opacity 200ms, left 800ms ease-in-out;
 }
 
 
