@@ -31,6 +31,10 @@ div1.style.left = "0px";
 //current slide variable set to 3 - the div sitting on top of the other divs.
 let currentSlide = 3;
 
+//variable that stores current employee number - used to ensure we don't slide in if user clicks on currently
+//..displayed employee
+let currentEmployeeNum = 0;
+
 //buttons variable to store dynamically created buttons from employees objects.
 let buttons = '';
 
@@ -60,14 +64,22 @@ slideOnLoad();
 
 function slideOnLoad(){
     let content = '';
-    content += '<h1>' + employees[0].firstName + ' ' + employees[0].lastName + '</h1>';
-    content += '<h3>Job: ' + employees[0].job + '</h3>';
-    content += '<p>' + employees[0].bio + '</p>';
+    content += '<h1>' + employees[currentEmployeeNum].firstName + ' ' + employees[currentEmployeeNum].lastName + '</h1>';
+    content += '<h3>Job: ' + employees[currentEmployeeNum].job + '</h3>';
+    content += '<p>' + employees[currentEmployeeNum].bio + '</p>';
     div3.innerHTML = content;
 }
 
 //function called when an employee name button is clicked. 
 function nextSlide(objNum){
+    //check if objNum matches currentEmployeeNum - if so, don't slide in employee information.
+    if(objNum == currentEmployeeNum){
+        return;
+    }
+
+    //update currentEmployeeNum
+    currentEmployeeNum = objNum;
+
     let content = '';
     content += '<h1>' + employees[i].firstName + ' ' + employees[i].lastName + '</h1>';
     content += '<h3>Job: ' + employees[i].job + '</h3>';
