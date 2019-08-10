@@ -14,6 +14,10 @@ body{
 	min-height:250px;
 }
 
+.btn{
+	background-color:lightgrey;
+}
+
 .display-div{
 	position:relative;
 	overflow: hidden;
