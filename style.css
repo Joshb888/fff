@@ -78,4 +78,16 @@ MOBILE FIRST DEVELOPMENT
 		height: 250px;
 		border: 1px solid lightgrey;
 	}
+
+	.sliderDiv{
+		width:100%;
+		position:absolute;
+		top:0;
+		padding-left:18px;
+		padding-right:18px;
+		transition: opacity 200ms, left 800ms ease-in-out;
+		-webkit-transition: opacity 200ms, left 800ms ease-in-out;
+		-moz-transition: opacity 200ms, left 800ms ease-in-out;
+		-o-transition: opacity 200ms, left 800ms ease-in-out;
+	}
 }
