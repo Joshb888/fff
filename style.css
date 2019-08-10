@@ -1,3 +1,8 @@
+body{
+	margin-left:0px;
+	margin-right:0px;
+}
+
 .container{
 	display:grid;
 	grid-template-columns: 97%;
@@ -6,13 +11,13 @@
 
 .buttons-menu{
 	padding:15px;
-	min-height:300px;
+	min-height:250px;
 }
 
 .display-div{
 	position:relative;
 	overflow: hidden;
-	height: 300px;
+	height: 250px;
 	border: 1px solid lightgrey;
 }
 
@@ -32,6 +37,11 @@ MOBILE FIRST DEVELOPMENT
 */
 
 @media screen and (min-width: 760px){
+    
+    body{
+		margin-left:130px;
+		margin-right:130px;
+	}
 
     .container{
 	    display:grid;
