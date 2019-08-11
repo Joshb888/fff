@@ -17,10 +17,11 @@ This would be the front end of a bigger project written using a back end languag
 
 ### SKILLS COVERED
 
+- Dynamic CSS property changes
+- Dynamically changing di heights using the offsetHeight property of changeable divs
 - Dynamic button creation
 - JS objects
-- Loops,
-- DOM
+- DOM manipulation
 - Event Listeners
 - Functions, loops, concatenation
 - CSS styling with Javascript
