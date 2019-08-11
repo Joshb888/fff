@@ -17,10 +17,13 @@ let employees = [
 //div we will add a button to dynamically from the employess objects.
 let buttonsMenu = document.getElementById("buttonsMenu");
 
-//divs to add content to AND slide in and out on button click.
+//divs to SLIDE IN and FADE OUT
 let div1 = document.getElementById("div1");
 let div2 = document.getElementById("div2");
 let div3 = document.getElementById("div3");
+
+//var for displayDiv - will use to CHANGE HEIGHT DYNAMICALLY
+let displayDiv = document.getElementById("displayDiv");
 
 //set starting position of divs
 div3.style.opacity = "1";
@@ -33,8 +36,7 @@ div1.style.left = "0px";
 //current slide variable set to 3 - the div sitting on top of the other divs.
 let currentSlide = 3;
 
-//variable that stores current employee number - used to ensure we don't slide in if user clicks on currently
-//..displayed employee
+//var stores currently displayed employee array number
 let currentEmployeeNum = 0;
 
 //buttons variable to store dynamically created buttons from employees objects.
@@ -74,7 +76,7 @@ function slideOnLoad(){
 
 //function called when an employee name button is clicked. 
 function nextSlide(objNum){
-    //check if objNum matches currentEmployeeNum - if so, don't slide in employee information.
+    //if objNum matches currentEmployeeNum - don't change slides
     if(objNum == currentEmployeeNum){
         return;
     }
@@ -85,7 +87,7 @@ function nextSlide(objNum){
     let content = '';
     content += '<h1>' + employees[i].firstName + ' ' + employees[i].lastName + '</h1>';
     content += '<h3>Job: ' + employees[i].job + '</h3>';
-    content += '<p>' + employees[i].bio + '</p>';
+    content += employees[i].bio;
 
     //fade out current slide, slide in waiting slide, move exited slide to the right
     if(currentSlide == 3){
@@ -94,6 +96,7 @@ function nextSlide(objNum){
         div2.style.opacity = "1";
         div2.style.left = "0px";
         div2.innerHTML = content;
+        changeDisplayHeight(div2.offsetHeight);
         div1.style.opacity = "0";
         div1.style.left = "1200px";
         currentSlide = 2;
@@ -105,11 +108,13 @@ function nextSlide(objNum){
         div1.style.opacity = "1";
         div1.style.left = "0px";
         div1.innerHTML = content;
+        changeDisplayHeight(div1.offsetHeight);
         currentSlide = 1;
     }else if(currentSlide == 1){
         div3.style.opacity = "1";
         div3.style.left = "0px";
         div3.innerHTML = content;
+        changeDisplayHeight(div3.offsetHeight);
         div2.style.opacity = "0";
         div2.style.left = "1200px";
         div1.style.opacity = "0";
@@ -117,4 +122,9 @@ function nextSlide(objNum){
         currentSlide = 3;
     }
 
+}
+
+//takes height of current slide - changes displayDiv height.
+function changeDisplayHeight(sliderHeight){
+    displayDiv.style.height = sliderHeight + 'px';
 }
