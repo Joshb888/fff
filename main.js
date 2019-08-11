@@ -1,15 +1,17 @@
 //Array of employee demo objects
 let employees = [
     {firstName:'Brian', lastName:'Wilson', job:'Developer',
-    bio:'Brian has worked as a developer for 20 years. He works with a variety of languages including Python, PHP and C#'},
+    bio:'<p>Brian has worked as a developer for 20 years.</p>' + 
+    '<p>He works with a variety of languages including Python, PHP and C#</p>'},
     {firstName:'Terry', lastName:'Jackson', job:'Manager',
-    bio: 'Terry joined in 2004 and has worked as Operations and Logistics manager.'},
+    bio: '<p>Terry joined in 2004 and has worked as Operations and Logistics manager.</p>'},
     {firstName:'Sally', lastName:'Phelan', job:'Director',
-    bio:'Sally has been the director of the company for 12 years overseeing the growth of the company.'},
+    bio:'<p>Sally has been the director of the company for 12 years.</p><p>She has overseen 50% company growth in the last 3 years.</p>'},
     {firstName:'Claire', lastName:'Wilson', job:'Designer',
-    bio:'Claire has a passion for design and works alongside the developers delivering pixel perfect design.'},
+    bio:'<p>Claire has a passion for design and works alongside the developers delivering pixel perfect design.</p>'},
     {firstName:'Debbie', lastName:'Jones', job:'Designer',
-    bio:'Debbie is a UX specialist working alongside our team of developers.'}
+    bio:'<p>Debbie is a UX specialistworking alongside our team of developers.</p>'
+    + ''}
 ];
 
 //div we will add a button to dynamically from the employess objects.
